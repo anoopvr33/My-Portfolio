@@ -23,7 +23,7 @@ export default function ContactSection() {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const sendEmail = async (e) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     resend.emails
       .send({
