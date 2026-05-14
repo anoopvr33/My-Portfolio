@@ -10,7 +10,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A full-stack e-commerce application with authentication, cart management, payment integration, and admin dashboard.",
-    image: "/projects/ecommerce.jpg",
+    image: "/mypic21.jpg",
     github: "https://github.com/yourusername/ecommerce-app",
     techStack: [
       "Next.js",
@@ -26,7 +26,7 @@ const projects = [
     title: "Real-Time Chat App",
     description:
       "Realtime messaging application with Socket.IO, JWT authentication, online users, and private chats.",
-    image: "/projects/chatapp.jpg",
+    image: "/mypic21.jpg",
     github: "https://github.com/yourusername/chat-app",
     techStack: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB"],
   },
@@ -35,7 +35,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "Modern responsive portfolio website with smooth animations and reusable UI components.",
-    image: "/projects/portfolio.jpg",
+    image: "/mypic21.jpg",
     github: "https://github.com/yourusername/portfolio",
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
@@ -44,7 +44,7 @@ const projects = [
     title: "Task Manager API",
     description:
       "REST API for task management with secure authentication, CRUD operations, and role-based access.",
-    image: "/projects/taskmanager.jpg",
+    image: "/mypic21.jpg",
     github: "https://github.com/yourusername/task-manager-api",
     techStack: ["Node.js", "Express.js", "MongoDB", "JWT"],
   },

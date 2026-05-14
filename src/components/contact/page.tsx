@@ -2,21 +2,41 @@
 
 "use client";
 
+import { useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { SiWhatsapp, SiInstagram, SiGithub } from "react-icons/si";
 
-// import { Resend } from 'resend';
+import { Resend } from "resend";
 
-// const resend = new Resend('re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M');
-
-// resend.emails.send({
-//   from: 'onboarding@resend.dev',
-//   to: 'anoopvranoop33@gmail.com',
-//   subject: 'Hello World',
-//   html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-// });
+const resend = new Resend("re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M");
 
 export default function ContactSection() {
+  const [data, setData] = useState({
+    email: "",
+    message: "",
+    subject: "",
+  });
+
+  const onChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    resend.emails
+      .send({
+        from: data.email,
+        to: "anoopvranoop33@gmail.com",
+        subject: data.subject,
+        html: "<p>" + data.message + "</p>",
+      })
+      .then(() => {
+        alert("Email sent successfully!");
+      });
+  };
+
   return (
     <section className="bg-slate-950 text-white py-20 px-6 border-t border-slate-800">
       <div className="max-w-7xl mx-auto">
@@ -128,19 +148,8 @@ export default function ContactSection() {
           <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8">
             <h3 className="text-3xl font-bold mb-8">Send Message</h3>
 
-            <form className="space-y-6">
+            <form onSubmit={sendEmail} className="space-y-6">
               {/* Name */}
-              <div>
-                <label className="block mb-2 text-sm text-slate-400">
-                  Your Name
-                </label>
-
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full bg-slate-950 border border-slate-700 focus:border-cyan-400 outline-none rounded-xl px-5 py-4 transition"
-                />
-              </div>
 
               {/* Email */}
               <div>
@@ -149,9 +158,25 @@ export default function ContactSection() {
                 </label>
 
                 <input
+                  onChange={onChange}
+                  name="email"
                   type="email"
                   placeholder="Enter your email"
                   className="w-full bg-slate-950 border border-slate-700 focus:border-cyan-400 outline-none rounded-xl px-5 py-4 transition"
+                />
+              </div>
+
+              <div>
+                <label className="block mb-2 text-sm text-slate-400">
+                  Subject
+                </label>
+
+                <input
+                  onChange={onChange}
+                  name="subject"
+                  type="text"
+                  placeholder="Write your subject..."
+                  className="w-full bg-slate-950 border border-slate-700 focus:border-cyan-400 outline-none rounded-xl px-5 py-4 transition resize-none"
                 />
               </div>
 
@@ -162,6 +187,8 @@ export default function ContactSection() {
                 </label>
 
                 <textarea
+                  onChange={onChange}
+                  name="message"
                   rows={6}
                   placeholder="Write your message..."
                   className="w-full bg-slate-950 border border-slate-700 focus:border-cyan-400 outline-none rounded-xl px-5 py-4 transition resize-none"

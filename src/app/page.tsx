@@ -22,7 +22,7 @@ export default function Home() {
       <ProjectsSection></ProjectsSection>
       <EducationExperience></EducationExperience>
       <ContactSection></ContactSection>
-      re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M
+      {/* re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M */}
     </div>
   );
 }
