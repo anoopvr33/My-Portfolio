@@ -57,7 +57,7 @@ const projects = [
 
 export default function SkillsSection() {
   return (
-    <section className="bg-slate-950 text-white py-20 px-6">
+    <section className="bg-slate-950 text-white py-20  px-3">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-14">
@@ -129,7 +129,7 @@ export default function SkillsSection() {
 
           {/* Right Side - Icons */}
           <div className="flex justify-center lg:justify-end">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-2">
               <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-cyan-400 transition">
                 <SiReact className="text-6xl text-cyan-400" />
                 <p className="mt-4 text-lg font-medium">React</p>
