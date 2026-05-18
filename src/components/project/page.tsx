@@ -10,7 +10,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A full-stack e-commerce application with authentication, cart management, payment integration, and admin dashboard.",
-    image: "/mypic21.jpg",
+    image: "/netclone.jpeg",
     github: "https://github.com/yourusername/ecommerce-app",
     techStack: [
       "Next.js",
@@ -26,7 +26,7 @@ const projects = [
     title: "Real-Time Chat App",
     description:
       "Realtime messaging application with Socket.IO, JWT authentication, online users, and private chats.",
-    image: "/mypic21.jpg",
+    image: "/shop.jpeg",
     github: "https://github.com/yourusername/chat-app",
     techStack: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB"],
   },
@@ -35,7 +35,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "Modern responsive portfolio website with smooth animations and reusable UI components.",
-    image: "/mypic21.jpg",
+    image: "/erp.jpeg",
     github: "https://github.com/yourusername/portfolio",
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
@@ -44,7 +44,7 @@ const projects = [
     title: "Task Manager API",
     description:
       "REST API for task management with secure authentication, CRUD operations, and role-based access.",
-    image: "/mypic21.jpg",
+    image: "/tolake.jpeg",
     github: "https://github.com/yourusername/task-manager-api",
     techStack: ["Node.js", "Express.js", "MongoDB", "JWT"],
   },
@@ -81,14 +81,15 @@ export default function ProjectsSection() {
                 <Image
                   src={project.image}
                   alt={project.title}
+                  sizes="100vw"
                   fill
                   className="object-cover"
                 />
               </div>
 
               {/* Content */}
-              <div className="p-7">
-                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+              <div className="p-3">
+                <h2 className=" font-bold mb-4">{project.title}</h2>
 
                 <p className="text-slate-400 leading-relaxed mb-6">
                   {project.description}
