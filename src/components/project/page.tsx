@@ -9,44 +9,36 @@ const projects = [
   {
     title: "E-Commerce Platform",
     description:
-      "A full-stack e-commerce application with authentication, cart management, payment integration, and admin dashboard.",
-    image: "/netclone.jpeg",
+      "A full-stack e-commerce application with Real-Time order (Socket.IO), authentication,deliveryboy track, cart management, payment integration, and admin dashboard.",
+    image: "/shop.jpeg",
     github: "https://github.com/yourusername/ecommerce-app",
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Redux",
-      "Tailwind CSS",
-      "Node.js",
-      "MongoDB",
-    ],
+    techStack: ["React.js", "JavaScript", "Redux", "CSS", "Node.js", "MongoDB"],
   },
 
   {
-    title: "Real-Time Chat App",
-    description:
-      "Realtime messaging application with Socket.IO, JWT authentication, online users, and private chats.",
-    image: "/shop.jpeg",
+    title: "Netflix Clone App",
+    description: "Movie Suggestions, Google Auth, JWT authentication,",
+    image: "/netclone.jpeg",
     github: "https://github.com/yourusername/chat-app",
     techStack: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB"],
   },
 
   {
-    title: "Portfolio Website",
+    title: "Houseboat services website",
     description:
       "Modern responsive portfolio website with smooth animations and reusable UI components.",
-    image: "/erp.jpeg",
+    image: "/tolake.jpeg",
     github: "https://github.com/yourusername/portfolio",
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
 
   {
-    title: "Task Manager API",
+    title: "Hotel ERP System",
     description:
-      "REST API for task management with secure authentication, CRUD operations, and role-based access.",
-    image: "/tolake.jpeg",
+      "REST API , CRUD operations, and role-based access.Redux , pagination for efficient data handling, and  error handling for user experience.Debouce for optimized search and API optimization.",
+    image: "/ERP-new.jpeg",
     github: "https://github.com/yourusername/task-manager-api",
-    techStack: ["Node.js", "Express.js", "MongoDB", "JWT"],
+    techStack: ["React.js", "Django", "MySql"],
   },
 ];
 
@@ -65,7 +57,7 @@ export default function ProjectsSection() {
           </h2>
 
           <p className="text-slate-400 mt-5 max-w-2xl mx-auto">
-            Some of the projects I’ve built using modern web technologies.
+            The projects I’ve built using modern web technologies.
           </p>
         </div>
 

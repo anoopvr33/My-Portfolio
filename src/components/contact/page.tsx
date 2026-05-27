@@ -25,16 +25,18 @@ export default function ContactSection() {
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    resend.emails
-      .send({
-        from: data.email,
-        to: "anoopvranoop33@gmail.com",
-        subject: data.subject,
-        html: "<p>" + data.message + "</p>",
-      })
-      .then(() => {
-        alert("Email sent successfully!");
-      });
+    const res = await resend.emails.send({
+      from: data.email,
+      to: "anoopvranoop33@gmail.com",
+      subject: data.subject,
+      html: "<p>" + data.message + "</p>",
+    });
+    if (res.error) {
+      alert("Failed to send message. Please try again later.");
+      return;
+    }
+    alert("Message sent successfully! I'll get back to you soon.");
+    setData({ email: "", message: "", subject: "" });
   };
 
   return (
@@ -64,7 +66,7 @@ export default function ContactSection() {
             <div className="space-y-5">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919745962256"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-5 bg-slate-900 border border-slate-800 hover:border-cyan-400 transition p-5 rounded-2xl"
@@ -84,7 +86,7 @@ export default function ContactSection() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/anoop-v-r-9b6b67275"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-5 bg-slate-900 border border-slate-800 hover:border-cyan-400 transition p-5 rounded-2xl"
@@ -124,7 +126,7 @@ export default function ContactSection() {
 
               {/* GitHub */}
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/anoopvr33"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-5 bg-slate-900 border border-slate-800 hover:border-cyan-400 transition p-5 rounded-2xl"
@@ -208,7 +210,7 @@ export default function ContactSection() {
 
         {/* Footer */}
         <div className="border-t border-slate-800 mt-20 pt-8 text-center text-slate-500">
-          © 2026 Your Name. All rights reserved.
+          © 2026 Anoop V R. All rights reserved.
         </div>
       </div>
     </section>

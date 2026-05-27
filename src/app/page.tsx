@@ -16,7 +16,7 @@ export default function Home() {
         frontend interfaces to engineering powerful backend systems. I’m
         passionate about modern web technologies, problem-solving, and creating
         products that leave a lasting impact."
-        profileImage="/mypic21.jpg"
+        profileImage="/mypic23.jpg"
       ></PortfolioWelcome>
       <SkillsSection></SkillsSection>
       <ProjectsSection></ProjectsSection>
