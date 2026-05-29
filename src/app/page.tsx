@@ -1,4 +1,5 @@
 import ContactSection from "@/components/contact/page";
+import DarkMode from "@/components/darkmode/page";
 import EducationExperience from "@/components/education/page";
 import PortfolioWelcome from "@/components/hero/page";
 import ProjectsSection from "@/components/project/page";
@@ -22,6 +23,7 @@ export default function Home() {
       <ProjectsSection></ProjectsSection>
       <EducationExperience></EducationExperience>
       <ContactSection></ContactSection>
+      <DarkMode></DarkMode>
       {/* re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M */}
     </div>
   );

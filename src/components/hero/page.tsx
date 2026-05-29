@@ -56,7 +56,7 @@ export default function PortfolioWelcome({
           </button>
 
           <button className="border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 transition px-6 py-3 rounded-xl font-medium">
-            View Projects
+            <a href="#pro">View Projects</a>
           </button>
         </div>
       </div>
