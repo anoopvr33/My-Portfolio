@@ -52,11 +52,11 @@ export default function PortfolioWelcome({
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
           <button className="bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-xl font-medium text-black">
-            Contact Me
+            <a href="#contact">Contact Me</a>
           </button>
 
           <button className="border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 transition px-6 py-3 rounded-xl font-medium">
-            <a href="#pro">View Projects</a>
+            <a href="#project">View Projects</a>
           </button>
         </div>
       </div>

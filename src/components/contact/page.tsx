@@ -40,7 +40,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="bg-slate-950 text-white py-20 px-6 border-t border-slate-800">
+    <section
+      id="contact"
+      className="bg-slate-950 text-white py-20 px-6 border-t border-slate-800"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
