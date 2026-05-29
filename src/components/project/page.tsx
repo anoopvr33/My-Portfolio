@@ -73,7 +73,7 @@ export default function ProjectsSection() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  sizes="100vw"
+                  sizes="100%"
                   fill
                   className="object-cover"
                 />

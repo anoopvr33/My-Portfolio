@@ -11,12 +11,15 @@ const skills = {
     "React.js",
     "Next.js",
     "Redux",
-    "HTML",
     "CSS",
     "Tailwind CSS",
     "Bootstrap",
     "Material UI",
     "Framer Motion",
+    "UI optimization",
+    "API optimization",
+    "Pagination",
+    "SEO",
   ],
 
   backend: [
