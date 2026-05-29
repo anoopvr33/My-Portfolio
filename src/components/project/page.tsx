@@ -48,7 +48,7 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <p className="uppercase tracking-[0.3em] text-cyan-400 text-sm">
+          <p className="uppercase tracking-[0.3em] text-rose-700 text-sm">
             My Work
           </p>
 
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
             Featured Projects
           </h2>
 
-          <p className="text-slate-400 mt-5 max-w-2xl mx-auto">
+          <p className="text-srose-700 mt-5 max-w-2xl mx-auto">
             The projects I’ve built using modern web technologies.
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:border-cyan-400 transition-all duration-300"
+              className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:border-rose-700 transition-all duration-300"
             >
               {/* Project Image */}
               <div className="relative w-full h-64">
@@ -83,7 +83,7 @@ export default function ProjectsSection() {
               <div className="p-3">
                 <h2 className=" font-bold mb-4">{project.title}</h2>
 
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-srose-700 leading-relaxed mb-6">
                   {project.description}
                 </p>
 
@@ -104,7 +104,7 @@ export default function ProjectsSection() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-cyan-500 text-black font-medium hover:bg-cyan-400 transition"
+                  className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-rose-700 text-white font-medium hover:bg-rose-700 transition"
                 >
                   <SiGithub className="text-xl" />
                   View Source Code

@@ -64,7 +64,7 @@ export default function SkillsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-14">
-          <p className="uppercase tracking-[0.3em] text-cyan-400 text-sm">
+          <p className="uppercase tracking-[0.3em] text-rose-700 text-sm">
             Technical Skills
           </p>
 
@@ -78,7 +78,7 @@ export default function SkillsSection() {
           {/* Left Side - Text Skills */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-cyan-400 font-semibold mb-3">Languages</h3>
+              <h3 className="text-rose-700 font-semibold mb-3">Languages</h3>
 
               <p className="text-slate-300 leading-relaxed">
                 {skills.languages.join(" • ")}
@@ -86,7 +86,7 @@ export default function SkillsSection() {
             </div>
 
             <div>
-              <h3 className="text-cyan-400 font-semibold mb-3">Frontend</h3>
+              <h3 className="text-rose-700 font-semibold mb-3">Frontend</h3>
 
               <p className="text-slate-300 leading-relaxed">
                 {skills.frontend.join(" • ")}
@@ -94,7 +94,7 @@ export default function SkillsSection() {
             </div>
 
             <div>
-              <h3 className="text-cyan-400 font-semibold mb-3">Backend</h3>
+              <h3 className="text-rose-700 font-semibold mb-3">Backend</h3>
 
               <p className="text-slate-300 leading-relaxed">
                 {skills.backend.join(" • ")}
@@ -102,7 +102,7 @@ export default function SkillsSection() {
             </div>
 
             <div>
-              <h3 className="text-cyan-400 font-semibold mb-3">Database</h3>
+              <h3 className="text-rose-700 font-semibold mb-3">Database</h3>
 
               <p className="text-slate-300 leading-relaxed">
                 {skills.database.join(" • ")}
@@ -110,7 +110,7 @@ export default function SkillsSection() {
             </div>
 
             <div>
-              <h3 className="text-cyan-400 font-semibold mb-3">
+              <h3 className="text-rose-700 font-semibold mb-3">
                 Tools & Platforms
               </h3>
 
@@ -120,7 +120,7 @@ export default function SkillsSection() {
             </div>
 
             <div>
-              <h3 className="text-cyan-400 font-semibold mb-3">
+              <h3 className="text-rose-700 font-semibold mb-3">
                 Deployment & DevOps
               </h3>
 
@@ -133,23 +133,23 @@ export default function SkillsSection() {
           {/* Right Side - Icons */}
           <div className="flex justify-center lg:justify-end">
             <div className="grid grid-cols-2 gap-2">
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-cyan-400 transition">
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-rose-700 transition">
                 <SiReact className="text-6xl text-cyan-400" />
                 <p className="mt-4 text-lg font-medium">React</p>
               </div>
 
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-cyan-400 transition">
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-rose-700 transition">
                 <SiNodedotjs className="text-6xl text-green-500" />
                 <p className="mt-4 text-lg font-medium">Node.js</p>
               </div>
 
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-cyan-400 transition">
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-rose-700 transition">
                 <SiExpress className="text-6xl text-white" />
                 <p className="mt-4 text-lg font-medium">Express</p>
               </div>
 
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-cyan-400 transition">
-                <SiMongodb className="text-6xl text-green-400" />
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 w-40 h-40 flex flex-col items-center justify-center hover:border-rose-700 transition">
+                <SiMongodb className="text-6xl text-grose-700" />
                 <p className="mt-4 text-lg font-medium">MongoDB</p>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function SkillsSection() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-4 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"
+                className="px-6 py-4 rounded-xl bg-slate-900 border border-slate-700 hover:border-rose-700 hover:text-rose-700 transition-all duration-300"
               >
                 {project.title}
               </a>

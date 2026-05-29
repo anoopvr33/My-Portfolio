@@ -6,10 +6,9 @@ export default function EducationExperience() {
   return (
     <section className="bg-slate-950 text-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <p className="uppercase tracking-[0.3em] text-cyan-400 text-sm">
+          <p className="uppercase tracking-[0.3em] text-rose-700 text-sm">
             Qualification & Career
           </p>
 
@@ -19,18 +18,16 @@ export default function EducationExperience() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-14">
-          
           {/* Education */}
           <div>
-            <h3 className="text-3xl font-bold mb-10 text-cyan-400">
+            <h3 className="text-3xl font-bold mb-10 text-rose-700">
               Education
             </h3>
 
             <div className="space-y-8 border-l border-slate-800 pl-8">
-              
               {/* Item */}
               <div className="relative">
-                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-cyan-400"></div>
+                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-rose-700"></div>
 
                 <p className="text-sm text-slate-400 mb-2">
                   2023 Oct - 2024 Feb
@@ -40,22 +37,16 @@ export default function EducationExperience() {
                   MERN Full Stack Development
                 </h4>
 
-                <p className="text-slate-400 mt-2">
-                  TechMindz, Kochi
-                </p>
+                <p className="text-slate-400 mt-2">TechMindz, Kochi</p>
               </div>
 
               {/* Item */}
               <div className="relative">
-                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-cyan-400"></div>
+                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-rose-700"></div>
 
-                <p className="text-sm text-slate-400 mb-2">
-                  2020 - 2023
-                </p>
+                <p className="text-sm text-slate-400 mb-2">2020 - 2023</p>
 
-                <h4 className="text-2xl font-semibold">
-                  Computer Engineering
-                </h4>
+                <h4 className="text-2xl font-semibold">Computer Engineering</h4>
 
                 <p className="text-slate-400 mt-2">
                   SreeRama Gov. College, Triprayar
@@ -64,34 +55,27 @@ export default function EducationExperience() {
 
               {/* Item */}
               <div className="relative">
-                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-cyan-400"></div>
+                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-rose-700"></div>
 
-                <p className="text-sm text-slate-400 mb-2">
-                  2018 - 2020
-                </p>
+                <p className="text-sm text-slate-400 mb-2">2018 - 2020</p>
 
-                <h4 className="text-2xl font-semibold">
-                  Computer Science
-                </h4>
+                <h4 className="text-2xl font-semibold">Computer Science</h4>
 
-                <p className="text-slate-400 mt-2">
-                  Valapad HSS
-                </p>
+                <p className="text-slate-400 mt-2">Valapad HSS</p>
               </div>
             </div>
           </div>
 
           {/* Experience */}
           <div>
-            <h3 className="text-3xl font-bold mb-10 text-cyan-400">
+            <h3 className="text-3xl font-bold mb-10 text-rose-700">
               Professional Experience
             </h3>
 
             <div className="space-y-10 border-l border-slate-800 pl-8">
-              
               {/* Experience 1 */}
               <div className="relative">
-                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-cyan-400"></div>
+                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-rose-700"></div>
 
                 <p className="text-sm text-slate-400 mb-2">
                   2025 July - Present
@@ -101,7 +85,7 @@ export default function EducationExperience() {
                   Jr Full-Stack Developer
                 </h4>
 
-                <p className="text-cyan-400 mt-2 mb-4">
+                <p className="text-rose-700 mt-2 mb-4">
                   Nibhas IT Solutions — Thrissur, Kerala
                 </p>
 
@@ -121,9 +105,7 @@ export default function EducationExperience() {
                     secure transactions.
                   </li>
 
-                  <li>
-                    • Managed complex application state using Redux.
-                  </li>
+                  <li>• Managed complex application state using Redux.</li>
 
                   <li>
                     • Collaborated with team members using Git for version
@@ -134,7 +116,7 @@ export default function EducationExperience() {
 
               {/* Experience 2 */}
               <div className="relative">
-                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-cyan-400"></div>
+                <div className="absolute -left-[41px] top-2 w-4 h-4 rounded-full bg-rose-700"></div>
 
                 <p className="text-sm text-slate-400 mb-2">
                   Internship / Training
@@ -144,7 +126,7 @@ export default function EducationExperience() {
                   MERN-Stack Development Trainee
                 </h4>
 
-                <p className="text-cyan-400 mt-2 mb-4">
+                <p className="text-rose-700 mt-2 mb-4">
                   Druv360 — Kochi, Kerala
                 </p>
 
@@ -159,9 +141,7 @@ export default function EducationExperience() {
                     features using WebSocket.
                   </li>
 
-                  <li>
-                    • Designed and optimized MongoDB database structures.
-                  </li>
+                  <li>• Designed and optimized MongoDB database structures.</li>
 
                   <li>
                     • Integrated Passport.js (JWT Authentication), Twilio, and
