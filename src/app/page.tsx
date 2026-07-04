@@ -4,6 +4,8 @@ import EducationExperience from "@/components/education/page";
 import PortfolioWelcome from "@/components/hero/page";
 import ProjectsSection from "@/components/project/page";
 import SkillsSection from "@/components/skills/page";
+import BackgroundBlur from "../components/BackgroundBlur.jsx";
+import ScrollStack from "../components/scroll.jsx";
 
 export default function Home() {
   return (
@@ -20,9 +22,13 @@ export default function Home() {
         profileImage="/mypic23.jpg"
       ></PortfolioWelcome>
       <SkillsSection></SkillsSection>
+
+      {/* <ScrollStack></ScrollStack> */}
+
       <ProjectsSection></ProjectsSection>
       <EducationExperience></EducationExperience>
       <ContactSection></ContactSection>
+      <BackgroundBlur></BackgroundBlur>
       {/* <DarkMode></DarkMode> */}
       {/* re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M */}
     </div>

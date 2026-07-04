@@ -42,19 +42,19 @@ const skills = {
 const projects = [
   {
     title: "E-Commerce App",
-    link: "https://github.com/yourusername/ecommerce-app",
+    link: "https://github.com/anoopvr33/shopNow.git",
   },
   {
-    title: "Chat Application",
-    link: "https://github.com/yourusername/chat-app",
+    title: "Attendance Management System",
+    link: "https://github.com/anoopvr33/Attendance-Manage.git",
   },
   {
-    title: "Portfolio Website",
-    link: "https://github.com/yourusername/portfolio",
+    title: "Hotel ERP System",
+    link: "https://github.com/anoopvr33/DaanERP.git",
   },
   {
-    title: "Task Manager API",
-    link: "https://github.com/yourusername/task-manager-api",
+    title: "Static HouseBoat Website",
+    link: "https://github.com/anoopvr33/TolakeGit.git",
   },
 ];
 
@@ -159,7 +159,7 @@ export default function SkillsSection() {
         {/* GitHub Projects */}
         <div className="mt-20">
           <h3 className="text-3xl font-bold mb-8 text-center">
-            GitHub Projects
+            GitHub Recent Projects
           </h3>
 
           <div className="flex flex-wrap justify-center gap-5">
