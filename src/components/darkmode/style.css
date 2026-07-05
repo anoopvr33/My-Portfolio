@@ -9,7 +9,7 @@
   height: 100vh;
   /* overflow-x: hidden; */
   overflow: hidden;
-  position: relative;
+  position: absolute;
 }
 
 .mode-tog {
@@ -43,14 +43,15 @@
 }
 
 .dark-mode {
-  position: relative;
+  position: absolute;
   transform: scale(0);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 250vw;
-  height: 250vw;
+  width:100rem;
+  /* z-index: 1; */
+  height: 100vh;
   border-radius: 50%;
   background-color: #18ff74;
   transition: 1000ms ease-in-out;

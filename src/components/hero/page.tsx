@@ -16,7 +16,7 @@ export default function PortfolioWelcome({
   profileImage,
 }: PortfolioWelcomeProps) {
   return (
-    <div className="max-w-5xl h-auto md:h-screen p-10 sm:p-20  w-full grid md:grid-cols-2 gap-10 items-center">
+    <div className="max-w-5xl h-auto md:h-screen p-4 sm:p-20  w-full grid md:grid-cols-2 gap-10 items-center">
       {/* Image */}
       {/* <div className="flex justify-center order-1 md:order-2">
         <div className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-rose-700 shadow-2xl shadow-rose-500/20">

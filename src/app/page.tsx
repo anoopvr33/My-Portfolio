@@ -5,11 +5,12 @@ import PortfolioWelcome from "@/components/hero/page";
 import ProjectsSection from "@/components/project/page";
 import SkillsSection from "@/components/skills/page";
 import BackgroundBlur from "../components/BackgroundBlur.jsx";
-import ScrollStack from "../components/scroll.jsx";
+// import ScrollStack from "../components/scroll.jsx";
 
 export default function Home() {
   return (
     <div>
+      {/* <DarkMode /> */}
       <PortfolioWelcome
         name="ANOOP V R"
         designation="Full Stack Developer"

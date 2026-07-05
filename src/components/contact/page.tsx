@@ -16,27 +16,45 @@ export default function ContactSection() {
     message: "",
     subject: "",
   });
+const [loading, setLoading] = useState(false);
+  // const onChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  // ) => {
+  //   setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  // };
 
-  const onChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await resend.emails.send({
-      from: data.email,
-      to: "anoopvranoop33@gmail.com",
-      subject: data.subject,
-      html: "<p>" + data.message + "</p>",
-    });
-    if (res.error) {
-      alert("Failed to send message. Please try again later.");
-      return;
+
+    setLoading(true);
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/anoopvranoop33@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (response.ok) {
+        alert("✅ Email sent successfully!");
+        form.reset();
+      } else {
+        alert("❌ Failed to send email.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("❌ Something went wrong.");
     }
-    alert("Message sent successfully! I'll get back to you soon.");
-    setData({ email: "", message: "", subject: "" });
+
+    setLoading(false);
   };
 
   return (
@@ -153,7 +171,7 @@ export default function ContactSection() {
           <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8">
             <h3 className="text-3xl font-bold mb-8">Send Message</h3>
 
-            <form onSubmit={sendEmail} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
 
               {/* Email */}
@@ -163,7 +181,7 @@ export default function ContactSection() {
                 </label>
 
                 <input
-                  onChange={onChange}
+                  
                   name="email"
                   type="email"
                   placeholder="Enter your email"
@@ -177,7 +195,7 @@ export default function ContactSection() {
                 </label>
 
                 <input
-                  onChange={onChange}
+                  
                   name="subject"
                   type="text"
                   placeholder="Write your subject..."
@@ -189,16 +207,23 @@ export default function ContactSection() {
               <div>
                 <label className="block mb-2 text-sm text-srose-700">
                   Message
-                </label>
+                </label><input
+        type="text"
+        name="_subject"
+        value="New Portfolio Contact"
+        readOnly
+        className="hidden"
+      />
 
                 <textarea
-                  onChange={onChange}
+                 
                   name="message"
                   rows={6}
                   placeholder="Write your message..."
                   className="w-full bg-slate-950 border border-slate-700 focus:border-rose-700 outline-none rounded-xl px-5 py-4 transition resize-none"
                 />
               </div>
+                    <input type="hidden" name="_captcha" value="false" />
 
               {/* Button */}
               <button

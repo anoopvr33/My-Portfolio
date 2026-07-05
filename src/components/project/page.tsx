@@ -6,7 +6,14 @@ import Image from "next/image";
 import { SiGithub } from "react-icons/si";
 import ScrollStack, { ScrollStackItem } from "../scrollComponent";
 
-const projects = [
+const projects = [{
+    title: "Hotel ERP System",
+    description:
+      "REST API , CRUD operations, and role-based access.Redux , pagination for efficient data handling, and  error handling for user experience.Debouce for optimized search and API optimization.",
+    image: "/ERP-New.jpeg",
+    github: "https://github.com/yourusername/task-manager-api",
+    techStack: ["React.js", "Redux", "MUI charts","Pagination","Protected Routes","Debounce"],
+  },
   {
     title: "E-Commerce Platform",
     description:
@@ -33,20 +40,13 @@ const projects = [
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
 
-  {
-    title: "Hotel ERP System",
-    description:
-      "REST API , CRUD operations, and role-based access.Redux , pagination for efficient data handling, and  error handling for user experience.Debouce for optimized search and API optimization.",
-    image: "/ERP-new.jpeg",
-    github: "https://github.com/yourusername/task-manager-api",
-    techStack: ["React.js", "Django", "MySql"],
-  },
+  
 ];
 
 export default function ProjectsSection() {
   return (
     <>
-      <section id="project" className="bg-slate-950 text-white py-20 px-6">
+      <section id="project" className="bg-slate-950/50 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-16">
@@ -68,10 +68,10 @@ export default function ProjectsSection() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:border-rose-700 transition-all duration-300"
+                className="bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden hover:border-rose-700 transition-all duration-300"
               >
                 {/* Project Image */}
-                <div className="relative w-full h-64">
+                <div className="relative w-[95%] m-auto mt-3 h-64 rounded-2xl overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
