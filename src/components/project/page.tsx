@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import { SiGithub } from "react-icons/si";
-import ScrollStack, { ScrollStackItem } from "../scrollComponent";
+// import ScrollStack, { ScrollStackItem } from "../scrollComponent";
 
 const projects = [{
     title: "Hotel ERP System",

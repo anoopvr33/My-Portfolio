@@ -1,5 +1,5 @@
 import ContactSection from "@/components/contact/page";
-import DarkMode from "@/components/darkmode/page";
+// import DarkMode from "@/components/darkmode/page";
 import EducationExperience from "@/components/education/page";
 import PortfolioWelcome from "@/components/hero/page";
 import ProjectsSection from "@/components/project/page";
