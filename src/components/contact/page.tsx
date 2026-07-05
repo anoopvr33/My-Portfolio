@@ -2,33 +2,28 @@
 
 "use client";
 
-import { useState } from "react";
+import { type FormEvent } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { SiWhatsapp, SiInstagram, SiGithub } from "react-icons/si";
 
-import { Resend } from "resend";
+// import { Resend } from "resend";
 
-const resend = new Resend("re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M");
+// const resend = new Resend("re_Pb9ERGJ9_ArB8NQzcQ3JkBbrphPysWh5M");
 
 export default function ContactSection() {
-  const [data, setData] = useState({
-    email: "",
-    message: "",
-    subject: "",
-  });
-const [loading, setLoading] = useState(false);
-  // const onChange = (
-  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  // ) => {
-  //   setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  // };
+  // const [data, setData] = useState({
+  //   email: "",
+  //   message: "",
+  //   subject: "",
+  // });
+  // const [loading, setLoading] = useState(false);
 
-   const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setLoading(true);
+    // setLoading(true);
 
-    const form = e.target;
+    const form = e.currentTarget;
     const formData = new FormData(form);
 
     try {
@@ -40,7 +35,7 @@ const [loading, setLoading] = useState(false);
           headers: {
             Accept: "application/json",
           },
-        }
+        },
       );
 
       if (response.ok) {
@@ -54,7 +49,7 @@ const [loading, setLoading] = useState(false);
       alert("❌ Something went wrong.");
     }
 
-    setLoading(false);
+    // setLoading(false);
   };
 
   return (
@@ -181,7 +176,6 @@ const [loading, setLoading] = useState(false);
                 </label>
 
                 <input
-                  
                   name="email"
                   type="email"
                   placeholder="Enter your email"
@@ -195,7 +189,6 @@ const [loading, setLoading] = useState(false);
                 </label>
 
                 <input
-                  
                   name="subject"
                   type="text"
                   placeholder="Write your subject..."
@@ -207,23 +200,23 @@ const [loading, setLoading] = useState(false);
               <div>
                 <label className="block mb-2 text-sm text-srose-700">
                   Message
-                </label><input
-        type="text"
-        name="_subject"
-        value="New Portfolio Contact"
-        readOnly
-        className="hidden"
-      />
+                </label>
+                <input
+                  type="text"
+                  name="_subject"
+                  value="New Portfolio Contact"
+                  readOnly
+                  className="hidden"
+                />
 
                 <textarea
-                 
                   name="message"
                   rows={6}
                   placeholder="Write your message..."
                   className="w-full bg-slate-950 border border-slate-700 focus:border-rose-700 outline-none rounded-xl px-5 py-4 transition resize-none"
                 />
               </div>
-                    <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_captcha" value="false" />
 
               {/* Button */}
               <button
