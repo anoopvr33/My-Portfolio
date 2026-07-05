@@ -10,7 +10,7 @@ const projects = [{
     title: "Hotel ERP System",
     description:
       "REST API , CRUD operations, and role-based access.Redux , pagination for efficient data handling, and  error handling for user experience.Debouce for optimized search and API optimization.",
-    image: "/ERP-New.jpeg",
+    image: "/ERP-new.jpeg",
     github: "https://github.com/yourusername/task-manager-api",
     techStack: ["React.js", "Redux", "MUI charts","Pagination","Protected Routes","Debounce"],
   },
