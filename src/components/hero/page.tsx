@@ -36,8 +36,8 @@ export default function PortfolioWelcome({
         <p className="text-sm uppercase tracking-[0.3em] text-slate-400">
           Welcome To My Portfolio
         </p>
-        <div className="md:flex gap-10 items-center w-full  md:w-[66vw]  justify-center md:justify-start">
-          <div className="relative  w-40 h-40 sm:w-60 sm:h-60 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-rose-700 shadow-2xl shadow-rose-500/20 mx-auto md:mx-0">
+        <div className="md:flex gap-10 items-center w-full   md:w-[66vw]  justify-center md:justify-start">
+          {/* <div className="relative  w-40 h-40 sm:w-60 sm:h-60 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-rose-700 shadow-2xl shadow-rose-500/20 mx-auto md:mx-0">
             <Image
               src={profileImage}
               alt={name}
@@ -46,14 +46,14 @@ export default function PortfolioWelcome({
               className="object-cover relative"
               priority
             />
-          </div>
+          </div> */}
 
           <h1 className="text-3xl  md:text-6xl  font-bold leading-tight">
             Hi, I’m <span className="text-rose-700">{name}</span>
           </h1>
         </div>
 
-        <div className="space-y-2 -mt-25 w-full p-5 pt-10 text-start rounded-2xl bg-slate-900/70 md:p-10 md:w-[66vw]">
+        <div className="space-y-2 -mt-25 w-full  pt-10 text-start rounded-2xl   md:w-[66vw]">
           <div>
             <h2 className=" text-xl mt-15 md:text-3xl font-semibold text-slate-300">
               {designation}
