@@ -6,29 +6,45 @@ import Image from "next/image";
 import { SiGithub } from "react-icons/si";
 // import ScrollStack, { ScrollStackItem } from "../scrollComponent";
 
-const projects = [{
+const projects = [
+  {
     title: "Hotel ERP System",
     description:
       "REST API , CRUD operations, and role-based access.Redux , pagination for efficient data handling, and  error handling for user experience.Debouce for optimized search and API optimization.",
     image: "/ERP-new.jpeg",
-    github: "https://github.com/yourusername/task-manager-api",
-    techStack: ["React.js", "Redux", "MUI charts","Pagination","Protected Routes","Debounce"],
+    github: "https://github.com/anoopvr33/DaanERP.git",
+    techStack: [
+      "React.js",
+      "Redux",
+      "MUI charts",
+      "Pagination",
+      "Protected Routes",
+      "Debounce",
+    ],
   },
   {
     title: "E-Commerce Platform",
     description:
       "A full-stack e-commerce application with Real-Time order (Socket.IO), authentication,deliveryboy track, cart management, payment integration, and admin dashboard.",
     image: "/shop.jpeg",
-    github: "https://github.com/yourusername/ecommerce-app",
+    github: "https://github.com/anoopvr33/shopNow.git",
     techStack: ["React.js", "JavaScript", "Redux", "CSS", "Node.js", "MongoDB"],
   },
 
   {
-    title: "Netflix Clone App",
-    description: "Movie Suggestions, Google Auth, JWT authentication,",
-    image: "/netclone.jpeg",
-    github: "https://github.com/yourusername/chat-app",
-    techStack: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB"],
+    title: "AI Smart Notes & Weather Dashboard",
+    description:
+      "Engineered an AI-powered notes application using Next.js, Express.js, and MySQL with a modular MVC architecture.",
+    image: "/ainot.jpeg",
+    github: "https://github.com/anoopvr33/ai-weather-notes-app.git",
+    techStack: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Gemini.AI",
+      "MySQL",
+      "weatherAPI",
+    ],
   },
 
   {
@@ -36,11 +52,9 @@ const projects = [{
     description:
       "Modern responsive portfolio website with smooth animations and reusable UI components.",
     image: "/tolake.jpeg",
-    github: "https://github.com/yourusername/portfolio",
-    techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/anoopvr33/TolakeGit.git",
+    techStack: ["React.js", "CSS", "Framer Motion", "Structured Code"],
   },
-
-  
 ];
 
 export default function ProjectsSection() {
